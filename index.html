@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gamma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <section class="services">
+        <div class="container">
+            <div class="service-card">
+                <div class="service">
+                    <h2 id="head1">0</h2>
+                    <p>İŞLƏDİYİ LAYİHƏLƏR</p>
+                </div>
+                <div class="service">
+                    <h2 id="head2">0</h2>
+                    <p>HƏYATA KEÇİRİLƏN REKLAM KAMPANİYALARI</p>
+                </div>
+                <div class="service">
+                    <h2 id="head3">0</h2>
+                    <p>ÇOXİLLİK TƏCRÜBƏ</p>
+                </div>
+                <div class="service">
+                    <h2 id="head4">0</h2>
+                    <p>MƏMNUN MÜŞTƏRİLƏR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- * About * -->
+    <section class="about">
+        <div class="about-head">
+            <p>TARİXİMİZ</p>
+            <h1>Şirkətimiz Haqqında Qısa Məlumat</h1>
+        </div>
+        <div class="about-body">
+            <div class="about-btn">
+                <div class="about-vision active-btn" onclick="goToSlide(0)">
+                    <div></div>
+                        <span><i class="fa-solid fa-circle"></i></span>
+                    <p>Viziyonumuz</p>
+                </div>
+                <div class="hr"></div>
+                <div class="about-vision" onclick="goToSlide(1)">
+                    <div></div>
+                        <span><i class="fa-solid fa-circle"></i></span>
+                    <p>Bizim missiyamiz</p>
+                </div>
+                <div class="hr"></div>
+                <div class="about-vision" onclick="goToSlide(2)">
+                    <div></div>
+                        <span><i class="fa-solid fa-circle"></i></span>
+                    <p>Metodologiyamiz</p>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="about-card">
+                    <div class="vision-card  active" >
+                        <div class="vision-body">
+                            <div class="vision-text">
+                                <h2>Bizim baxisimiz</h2>
+                                <p>Biz bütün iş sahələrində müştərilərimizə marketinq həlləri təklif edən ilk beynəlxalq təşkilatlardan biri olmağı hədəfləyirik.Bundan əlavə, biz innovasiyalar, liderlik və inkişaf yolu ilə Türkiyə bazarı ilə beynəlxalq bazarlar arasında əlaqə yaratmağa çalışır və bizimlə işləyərkən müştərilərimizə davamlılıq gücü ilə ilham veririk. </p>
+                                <hr>
+                            </div>
+                            <img src="images/vision.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="vision-card" >
+                        <div class="vision-body">
+                            <div class="vision-text">
+                                <h2>Bizim missiyamiz</h2>
+                                <p>Müştəri satışlarını və investisiya gəlirlərini artırmaq üçün çalışarkən bazarlarda təsir edəcək markalar yaratmaq və inkişaf etdirmək, uğur qazanmaq və müştərilərimizin istəklərinə cavab verən və onların marketinq məqsədlərinə çatan peşəkar xidmətlər göstərmək</p>
+                                <hr>
+                            </div>
+                            <img src="images/mission.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="vision-card ">
+                        <div class="vision-body">
+                            <div class="vision-text">
+                                <h2>Metodologiyamiz</h2>
+                                <p>O, dərin düşünmə və marketinq strategiyalarımızı təkmilləşdirməyə çalışmaq, ideyalardan başlayaraq bazar araşdırması, dərin müzakirələr, sonra bu ideyaları düzgün şəkildə həyata keçirmək və müştərilərin tələblərinə cavab verən uğurlu kampaniyalar yaratmaqla bağlı öhdəliyimizə əsaslanır. işlərin hər mərhələsində şəffaflığın ən yüksək səviyyəsinə.Biz ənənəvi marketinq metodlarından kənara çıxmağa çalışırıq və bütün səylərimizi uğur qazanmağa və maneələri onlar baş verməmişdən əvvəl dəf etməyə sərf edirik.</p>
+                                <hr>
+                            </div>
+                            <img src="images/method.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
