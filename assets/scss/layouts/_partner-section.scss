@@ -1,0 +1,123 @@
+.partner-section {
+  background-color: #000000;
+  background-image: linear-gradient(to right, #000000, #130f40);
+
+  .about-partner-and-image {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    .partner-image {
+      width: 50%;
+      float: left;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+      }
+
+      @media only screen and (max-width: 991px) {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+      }
+    }
+
+    .about-partnership {
+      width: 50%;
+
+      @media only screen and (max-width: 991px) {
+        width: 100%;
+      }
+
+      .about-partner-header {
+        padding-left: 30px;
+
+        h3 {
+          font-weight: 700;
+          font-family: "Cairo", sans-serif;
+          font-size: 16px;
+          color: #fe7068;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 20px;
+            background-color: #fe7068;
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+        }
+
+        h1 {
+          font-weight: 700;
+          font-family: "Cairo", sans-serif;
+          font-size: 40px;
+          color: #fff;
+        }
+      }
+
+      .about {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .text-div {
+          span {
+            padding: 0 20px;
+            color: rgba(144, 144, 144, 0.3);
+            font-family: "Cairo", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+
+        div {
+          h3 {
+            line-height: 30px;
+            font-weight: 700;
+            font-family: "Cairo", sans-serif;
+            color: #fe7068;
+            font-size: 24px;
+          }
+
+          p {
+            font-weight: 400;
+            font-family: "Cairo", sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .about-partner-and-image {
+      flex-direction: column;
+    }
+
+    .about-partner-and-image .partner-image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 700px;
+        padding: 70px;
+      }
+    }
+
+    .about-partner-and-image .about-partnership,
+    .about-partner-and-image .about .text-div {
+      width: 100%;
+    }
+  }
+}

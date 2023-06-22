@@ -1,0 +1,69 @@
+.hero-banner {
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+  #hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    .texts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+      h1 {
+        font-family: "Livvic", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      p {
+        line-height: 20px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+      }
+    }
+    .image {
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 500px;
+        transform: scaleX(-1);
+      }
+    }
+    .contact-btn {
+      font-family: "Livvic", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 20px 30px;
+      color: white;
+      border: none;
+      border-radius: 100px;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(66, 66, 222, 1) 90%,
+        rgba(0, 212, 255, 1) 100%
+      );
+    }
+  }
+}
+@media only screen and (max-width:778px){
+  .hero-banner #hero-banner{
+    flex-direction: column;
+  }
+  .hero-banner #hero-banner .image {
+    max-width: 100%;
+    padding: 5%;
+  }
+  .hero-banner #hero-banner .image img{
+    max-width: 500px;
+    
+  }
+  .hero-banner #hero-banner .texts {
+text-align: center;  }
+}
