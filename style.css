@@ -1,13 +1,23 @@
-body {
-    margin: 0;
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
 }
-
+html,body {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
 .services{
     width: 100%;
     height: 330px;
+    padding: 10px;
 }
 
-.container{
+.service-container{
+    position: relative;
     width: 100%;
     max-width: 1190px;
     height: 230px;
@@ -33,10 +43,35 @@ body {
     font-weight: 600;
 }
 
+@media screen and (max-width:700px) {
+    .services{
+        height: 700px;
+        padding: 20px;
+    }
+    .service-container {
+        margin: 0 auto;
+        max-width: 400px;
+        height: 650px;
+        justify-content: center;
+        
+    }
+    .service-card{
+        padding-top: 300px;
+        flex-direction: column;
+    }
+    .service-card div p{
+        width: 300px;
+    }
+    .about-btn {
+        padding: 0 25px;
+    }
+}
+
             /* * About * */
 .about {
     width: 100%;
-    height: 1100px;
+    height: 900px;
+    overflow-y: auto;
 }
 
 .about-head {
@@ -84,13 +119,17 @@ body {
     color: rgb(205, 42, 246);
 }
 
-.about-vision div{
+.circle {
     display: none;
+}
+
+.circle.activ{
+    display: block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
     margin: 0 auto;
     position: absolute;
     z-index: -1;
@@ -99,7 +138,7 @@ body {
 }
 .about-vision span i{
     position: absolute;
-    top: 9.5%;
+    top: 8.5%;
     left: 43%;
     font-size: 12px;
 }
@@ -107,12 +146,12 @@ body {
     margin-top: 40px;
 }
 
-
 .about-card{
     width: 100%;
-    height: 800px;
+    height: 650px;
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 .vision-card .vision-body{
     max-width: 1100px;
@@ -125,7 +164,7 @@ body {
     transition: transform 0.5s ease;
     flex: 0 0 100%;
 }
-.vision-card img {
+.vision-body img {
     max-width: 645px;
     width: 100%;
     height: 550px;
@@ -169,4 +208,101 @@ body {
 
 .vision-card.right {
     transform: translateX(200%);
+}
+
+@media screen and (max-width: 1000px){
+    .about-card {
+        height: 1200px;
+        overflow: auto;
+    }
+    .vision-card .vision-body{
+        width: 80%;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .vision-text{
+        max-width: 800px;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .vision-body img{
+        margin: 0 auto;
+    }
+}
+
+        /* * Footer Contact * */
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(205, 42, 246);
+    color: #fff;
+    overflow: auto;
+}
+.footer-gird{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    gap: 30px;
+    place-items: center;
+}
+.footer-card{
+    padding: 15px;
+    text-align: center;
+}
+.footer-card h1{
+    font-size: 35px;
+}
+.footer-card p{
+    line-height: 30px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+.social-icon a{
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.social-icon a:hover{
+    background-color: #ff0000;
+}
+.social-icon a:hover div i{
+    color: #fff;
+}
+.social-icon div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon a div i{
+    font-size: 20px;
+}
+.footer-contact {
+    padding-top: 65px;
+}
+
+.footer-contact div i{
+    font-size: 23px;
+}
+
+.footer-contract{
+    padding: 30px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-contract a{
+    color: #fff;
+}
+.footer-contract a:hover{
+    color: #333;
 }
