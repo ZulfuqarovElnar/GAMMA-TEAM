@@ -355,27 +355,27 @@ header .header .menu-icon i {
   font-size: 40px;
   color: #fff;
 }
-.partner-section .about-partner-and-image .about-partnership .about {
+.partner-section .about-partner-and-image .about-partnership .about2 {
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.partner-section .about-partner-and-image .about-partnership .about .text-div span {
+.partner-section .about-partner-and-image .about-partnership .about2 .text-div span {
   padding: 0 20px;
   color: rgba(144, 144, 144, 0.3);
   font-family: "Cairo", sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
-.partner-section .about-partner-and-image .about-partnership .about div h3 {
+.partner-section .about-partner-and-image .about-partnership .about2 div h3 {
   line-height: 30px;
   font-weight: 700;
   font-family: "Cairo", sans-serif;
   color: #fe7068;
   font-size: 24px;
 }
-.partner-section .about-partner-and-image .about-partnership .about div p {
+.partner-section .about-partner-and-image .about-partnership .about2 div p {
   font-weight: 400;
   font-family: "Cairo", sans-serif;
   font-size: 16px;
