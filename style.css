@@ -19,7 +19,7 @@ a{
 .service-container{
     position: relative;
 }
-.services .container{
+.service-container{
     width: 100%;
     max-width: 1190px;
     height: 230px;
@@ -136,7 +136,7 @@ a{
     position: absolute;
     z-index: -1;
     left: 35%;
-    top: -3%;
+    top: -1%;
 }
 .about-vision span i{
     position: absolute;
@@ -172,6 +172,7 @@ a{
     height: 550px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 .vision-text{
     max-width: 430px;
@@ -204,13 +205,6 @@ a{
     transition: all 0.5s;
 }
 
-.vision-card.left {
-    transform: translateX(-100%);
-}
-
-.vision-card.right {
-    transform: translateX(200%);
-}
 
 @media screen and (max-width: 1000px){
     .about-card {
@@ -270,6 +264,7 @@ a{
     background-color: #fff;
     border-radius: 50%;
     transition: all 0.5s;
+    text-decoration: none;
 }
 .social-icon a:hover{
     background-color: #ff0000;
@@ -304,6 +299,7 @@ a{
 }
 .footer-contract a{
     color: #fff;
+    text-decoration: none;
 }
 .footer-contract a:hover{
     color: #333;

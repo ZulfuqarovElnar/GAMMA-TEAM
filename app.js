@@ -11,53 +11,59 @@ function incrementNumber(count1, count2, count3, count4) {
     const startTime = performance.now(); // Animasyonun başlangıç zamanı
   
     function updateNumbers(timestamp) {
-      const elapsedTime = timestamp - startTime;
+    const elapsedTime = timestamp - startTime;
+
+    const progress = Math.min(1, elapsedTime / duration);
+
+    const currentValue1 = Math.floor(count1 + progress * (28 - count1));
+    const currentValue2 = Math.floor(count2 + progress * (1000 - count2));
+    const currentValue3 = Math.floor(count3 + progress * (7 - count3));
+    const currentValue4 = Math.floor(count4 + progress * (100 - count4));
+
+    headEl1.textContent = currentValue1;
+    headEl2.textContent = currentValue2 + " +";
+    headEl3.textContent = currentValue3 + " +";
+    headEl4.textContent = currentValue4;
   
-      const progress = Math.min(1, elapsedTime / duration);
-  
-      const currentValue1 = Math.floor(count1 + progress * (28 - count1));
-      const currentValue2 = Math.floor(count2 + progress * (1000 - count2));
-      const currentValue3 = Math.floor(count3 + progress * (7 - count3));
-      const currentValue4 = Math.floor(count4 + progress * (100 - count4));
-  
-      headEl1.textContent = currentValue1;
-      headEl2.textContent = currentValue2 + " +";
-      headEl3.textContent = currentValue3 + " +";
-      headEl4.textContent = currentValue4;
-  
-      if (progress < 1) {
+    if (progress < 1) {
         requestAnimationFrame(updateNumbers);
-      }
     }
-  
+}
+
     requestAnimationFrame(updateNumbers);
-  }
-  
-  incrementNumber(0, 0, 0, 0);
-  
+}
+
+incrementNumber(0, 0, 0, 0);
+
           // ABOUT Slider
-  
-  var slides = document.getElementsByClassName('vision-card');
-  var buttons = document.getElementsByClassName('about-vision');
-  
-  for (var i = 0; i < buttons.length; i++) {
+
+var slides = document.getElementsByClassName('vision-card');
+var buttons = document.getElementsByClassName('about-vision');
+var circle = document.getElementsByClassName('circle');
+
+for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
-      var buttonIndex = Array.from(buttons).indexOf(this);
-      goToSlide(buttonIndex);
-      changeButtonColor(buttonIndex);
+        var buttonIndex = Array.from(buttons).indexOf(this);
+        goToSlide(buttonIndex);
+        changeButtonColor(buttonIndex);
+        circleButton(buttonIndex);
     });
-  }
-  
-  function goToSlide(slideIndex) {
+}
+
+function goToSlide(slideIndex) {
     const currentSlide = document.querySelector('.active');
     currentSlide.classList.remove('active');
     slides[slideIndex].classList.add('active');
-  }
-  function changeButtonColor(buttonIndex) {
+}
+
+function changeButtonColor(buttonIndex) {
     var currentButton = document.querySelector('.active-btn');
     currentButton.classList.remove('active-btn');
     buttons[buttonIndex].classList.add('active-btn');
-  }
-  
-  
-  
+}
+
+function circleButton(buttonIndex) {
+    var currentCircle = document.querySelector('.activ');
+    currentCircle.classList.remove('activ');
+    circle[buttonIndex].classList.add('activ');
+}
