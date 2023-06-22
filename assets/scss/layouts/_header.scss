@@ -1,0 +1,129 @@
+header {
+  position: fixed;
+  padding: 30px 0;
+  background-color: rgb(0, 0, 0, 0.3);
+  width: 100%;
+  margin-bottom: 100px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu-icon-left{
+      display: none;
+      color: white;
+      font-size: 24px;
+    }
+    .search{
+      display: none;
+
+      .search-box{
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+      
+      .input-search{
+        height: 50px;
+        width: 50px;
+        border-style: none;
+        padding: 10px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 25px;
+        transition: all .5s ease-in-out;
+        background-color: rgb(26, 26, 26,0.3);
+        padding-right: 40px;
+        color:#fff;
+      }
+      .input-search::placeholder{
+        color:rgba(255,255,255,.5);
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 100;
+      }
+      .btn-search{
+        width: 50px;
+        height: 50px;
+        border-style: none;
+        font-size: 20px;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+        color:#ffffff ;
+        background-color:transparent;
+        pointer-events: painted;  
+      }
+      .btn-search:focus ~ .input-search{
+        width: 300px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+      }
+      .input-search:focus{
+        width: 300px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+      }
+      
+    }
+    }
+    .logo {
+      h1 {
+        font-family: "Foldit", cursive;
+        font-weight: 900;
+        font-size: 36px;
+        letter-spacing: 7px;
+      }
+    }
+    nav {
+      ul {
+        gap: 35px;
+        li {
+          &:hover {
+            a{color:rgb(189, 189, 189) ;}
+          }
+
+
+          a {
+            font-size: 16px;
+            font-family: "Cabin", sans-serif;
+            color: white;
+            text-decoration: none;
+          }
+          .dropdown-item{
+            color: black;
+            &:hover{
+                color: black;
+            }
+          }
+        }
+      }
+    }
+    .menu-icon {
+      i {
+      font-size: 24px;
+      color: white;
+      }
+    }
+  }
+}
+@media only screen and (max-width:1269px){
+  header .header nav{
+    display: none;
+  }
+  header .header .menu-icon-left{
+    display: block;
+  }
+  header .header .menu-icon{
+    display: none;
+  }
+  header .header .search{
+    display: block;
+  }
+}

@@ -1,99 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gamma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <section class="services">
-        <div class="container">
-            <div class="service-card">
-                <div class="service">
-                    <h2 id="head1">0</h2>
-                    <p>İŞLƏDİYİ LAYİHƏLƏR</p>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="menu-icon-left">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="logo">
+            <h1>GAMMA</h1>
+          </div>
+          <nav>
+            <ul class="d-flex align-items-center justify-content-between g-5">
+              <li><a href="">Ana səhifə</a></li>
+              <li><a href="">Şirkət haqqında</a></li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Xidmətlərimiz
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Xidmətlərimiz</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Web dizayn</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Digital Marketinq</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Search Engine Optimization
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Qrafik Dizayn</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="service">
-                    <h2 id="head2">0</h2>
-                    <p>HƏYATA KEÇİRİLƏN REKLAM KAMPANİYALARI</p>
-                </div>
-                <div class="service">
-                    <h2 id="head3">0</h2>
-                    <p>ÇOXİLLİK TƏCRÜBƏ</p>
-                </div>
-                <div class="service">
-                    <h2 id="head4">0</h2>
-                    <p>MƏMNUN MÜŞTƏRİLƏR</p>
-                </div>
+              </li>
+              <li></li>
+              <li><a href="">Galerimiz</a></li>
+              <li><a href="">Müştərilərimiz</a></li>
+              <li><a href="">Bizə zəng et</a></li>
+            </ul>
+          </nav>
+
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search">
+            <div class="search-box">
+              <button class="btn-search"><i class="fas fa-search"></i></button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Type to Search..."
+              />
             </div>
+          </div>
         </div>
+      </div>
+    </header>
+    <section class="hero-banner">
+      <div class="container">
+        <div id="hero-banner">
+          <div class="texts">
+            <h1>
+              Sizinlə birgə işinizi elektron sahədə inkişaf etdirmə səyahətinə
+              çıxırıq.
+            </h1>
+            <p>
+              Xidmətlərimizə biznesinizin daha çox müştəriyə çatmasına imkan
+              verən rəqəmsal marketinq sahəsində təcrübəmiz və davamlı
+              inkişafımız daxildir.
+            </p>
+            <a href="" class="btn contact-btn">Bizimlə əlaqə saxlayın</a>
+          </div>
+          <div class="image w-50">
+            <img src="./assets/images/contact.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partner-section">
+      <div class="container">
+        <div class="about-partner-and-image d-flex">
+          <div class="partner-image">
+            <img
+              src="./assets/images/—Pngtree—business partnership concept with two_7516360.png"
+              alt=""
+            />
+          </div>
+          <div class="about-partnership">
+            <div class="about-partner-header">
+              <h3>GAMMA AGENCY</h3>
+              <h1>Google İş Ortakları</h1>
+            </div>
+            <div class="about">
+              <div class="d-flex text-div">
+                <span>01</span>
+                <div>
+                  <h3>Google iş ortağı olmak ne anlama gelir?</h3>
+                  <p>
+                    Bu, Google'ın Türkiye ve Orta Doğu'daki yetkili acenteleri
+                    olduğumuz ve pazarlama kampanyalarını yönetme konusunda
+                    Google'dan deneyim sertifikalarına sahip birçok kalifiye
+                    çalışanımız olduğu ve çok büyük bütçelerle ve yüksek
+                    kalitede kampanyalar yürütebildiğimiz anlamına gelir.
+                    Ekibimiz, müşteri reklamlarının geliştirilmesinde ve yatırım
+                    getirilerinde önemli bir büyüme kaydetti ve Google'ın
+                    sunduğu özel teknik destekten yararlanıyoruz.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex text-div">
+                <span>02</span>
+                <div>
+                  <h3>
+                    Müşterilerimiz, Apollo'nun Google ile ortaklığından nasıl
+                    yararlanır?
+                  </h3>
+                  <p>
+                    Müşteri, reklam kampanyalarının en odaklı ve doğru
+                    hedeflemeyle ve optimum performans kalitesiyle doğru şekilde
+                    başlatılmasını sağlayacaktır.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex text-div">
+                <span>03</span>
+                <div>
+                  <h3>Nasıl Google iş ortağı olduk?</h3>
+                  <p>
+                    - %89,5 kalite ile gerekli olan %70 oranını aşan reklam
+                    kampanyaları başlattık.
+                    <br />
+                    - 90 gün içinde müşterilerimiz için 20.000$'dan fazla
+                    bütçeli reklam kampanyaları yürüttük.
+                    <br />
+                    - Ekibimiz gerekli tüm testleri geçti ve tüm Google
+                    sertifikalarını aldı
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section class="services">
+      <div class="container">
+        <div class="service-card">
+          <div class="service">
+            <h2 id="head1">0</h2>
+            <p>İŞLƏDİYİ LAYİHƏLƏR</p>
+          </div>
+          <div class="service">
+            <h2 id="head2">0</h2>
+            <p>HƏYATA KEÇİRİLƏN REKLAM KAMPANİYALARI</p>
+          </div>
+          <div class="service">
+            <h2 id="head3">0</h2>
+            <p>ÇOXİLLİK TƏCRÜBƏ</p>
+          </div>
+          <div class="service">
+            <h2 id="head4">0</h2>
+            <p>MƏMNUN MÜŞTƏRİLƏR</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-            <!-- * About * -->
+    
     <section class="about">
-        <div class="about-head">
-            <p>TARİXİMİZ</p>
-            <h1>Şirkətimiz Haqqında Qısa Məlumat</h1>
+      <div class="about-head">
+        <p>TARİXİMİZ</p>
+        <h1>Şirkətimiz Haqqında Qısa Məlumat</h1>
+      </div>
+      <div class="about-body">
+        <div class="about-btn">
+          <div class="about-vision active-btn" onclick="goToSlide(0)">
+            <div></div>
+            <span><i class="fa-solid fa-circle"></i></span>
+            <p>Viziyonumuz</p>
+          </div>
+          <div class="hr"></div>
+          <div class="about-vision" onclick="goToSlide(1)">
+            <div></div>
+            <span><i class="fa-solid fa-circle"></i></span>
+            <p>Bizim missiyamiz</p>
+          </div>
+          <div class="hr"></div>
+          <div class="about-vision" onclick="goToSlide(2)">
+            <div></div>
+            <span><i class="fa-solid fa-circle"></i></span>
+            <p>Metodologiyamiz</p>
+          </div>
         </div>
-        <div class="about-body">
-            <div class="about-btn">
-                <div class="about-vision active-btn" onclick="goToSlide(0)">
-                    <div></div>
-                        <span><i class="fa-solid fa-circle"></i></span>
-                    <p>Viziyonumuz</p>
+        <div class="about-container">
+          <div class="about-card">
+            <div class="vision-card active">
+              <div class="vision-body">
+                <div class="vision-text">
+                  <h2>Bizim baxisimiz</h2>
+                  <p>
+                    Biz bütün iş sahələrində müştərilərimizə marketinq həlləri
+                    təklif edən ilk beynəlxalq təşkilatlardan biri olmağı
+                    hədəfləyirik.Bundan əlavə, biz innovasiyalar, liderlik və
+                    inkişaf yolu ilə Türkiyə bazarı ilə beynəlxalq bazarlar
+                    arasında əlaqə yaratmağa çalışır və bizimlə işləyərkən
+                    müştərilərimizə davamlılıq gücü ilə ilham veririk.
+                  </p>
+                  <hr />
                 </div>
-                <div class="hr"></div>
-                <div class="about-vision" onclick="goToSlide(1)">
-                    <div></div>
-                        <span><i class="fa-solid fa-circle"></i></span>
-                    <p>Bizim missiyamiz</p>
-                </div>
-                <div class="hr"></div>
-                <div class="about-vision" onclick="goToSlide(2)">
-                    <div></div>
-                        <span><i class="fa-solid fa-circle"></i></span>
-                    <p>Metodologiyamiz</p>
-                </div>
+                <img src="images/vision.jpg" alt="" />
+              </div>
             </div>
-            <div class="about-container">
-                <div class="about-card">
-                    <div class="vision-card  active" >
-                        <div class="vision-body">
-                            <div class="vision-text">
-                                <h2>Bizim baxisimiz</h2>
-                                <p>Biz bütün iş sahələrində müştərilərimizə marketinq həlləri təklif edən ilk beynəlxalq təşkilatlardan biri olmağı hədəfləyirik.Bundan əlavə, biz innovasiyalar, liderlik və inkişaf yolu ilə Türkiyə bazarı ilə beynəlxalq bazarlar arasında əlaqə yaratmağa çalışır və bizimlə işləyərkən müştərilərimizə davamlılıq gücü ilə ilham veririk. </p>
-                                <hr>
-                            </div>
-                            <img src="images/vision.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="vision-card" >
-                        <div class="vision-body">
-                            <div class="vision-text">
-                                <h2>Bizim missiyamiz</h2>
-                                <p>Müştəri satışlarını və investisiya gəlirlərini artırmaq üçün çalışarkən bazarlarda təsir edəcək markalar yaratmaq və inkişaf etdirmək, uğur qazanmaq və müştərilərimizin istəklərinə cavab verən və onların marketinq məqsədlərinə çatan peşəkar xidmətlər göstərmək</p>
-                                <hr>
-                            </div>
-                            <img src="images/mission.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="vision-card ">
-                        <div class="vision-body">
-                            <div class="vision-text">
-                                <h2>Metodologiyamiz</h2>
-                                <p>O, dərin düşünmə və marketinq strategiyalarımızı təkmilləşdirməyə çalışmaq, ideyalardan başlayaraq bazar araşdırması, dərin müzakirələr, sonra bu ideyaları düzgün şəkildə həyata keçirmək və müştərilərin tələblərinə cavab verən uğurlu kampaniyalar yaratmaqla bağlı öhdəliyimizə əsaslanır. işlərin hər mərhələsində şəffaflığın ən yüksək səviyyəsinə.Biz ənənəvi marketinq metodlarından kənara çıxmağa çalışırıq və bütün səylərimizi uğur qazanmağa və maneələri onlar baş verməmişdən əvvəl dəf etməyə sərf edirik.</p>
-                                <hr>
-                            </div>
-                            <img src="images/method.jpg" alt="">
-                        </div>
-                    </div>
+            <div class="vision-card">
+              <div class="vision-body">
+                <div class="vision-text">
+                  <h2>Bizim missiyamiz</h2>
+                  <p>
+                    Müştəri satışlarını və investisiya gəlirlərini artırmaq üçün
+                    çalışarkən bazarlarda təsir edəcək markalar yaratmaq və
+                    inkişaf etdirmək, uğur qazanmaq və müştərilərimizin
+                    istəklərinə cavab verən və onların marketinq məqsədlərinə
+                    çatan peşəkar xidmətlər göstərmək
+                  </p>
+                  <hr />
                 </div>
+                <img src="images/mission.jpg" alt="" />
+              </div>
             </div>
+            <div class="vision-card">
+              <div class="vision-body">
+                <div class="vision-text">
+                  <h2>Metodologiyamiz</h2>
+                  <p>
+                    O, dərin düşünmə və marketinq strategiyalarımızı
+                    təkmilləşdirməyə çalışmaq, ideyalardan başlayaraq bazar
+                    araşdırması, dərin müzakirələr, sonra bu ideyaları düzgün
+                    şəkildə həyata keçirmək və müştərilərin tələblərinə cavab
+                    verən uğurlu kampaniyalar yaratmaqla bağlı öhdəliyimizə
+                    əsaslanır. işlərin hər mərhələsində şəffaflığın ən yüksək
+                    səviyyəsinə.Biz ənənəvi marketinq metodlarından kənara
+                    çıxmağa çalışırıq və bütün səylərimizi uğur qazanmağa və
+                    maneələri onlar baş verməmişdən əvvəl dəf etməyə sərf
+                    edirik.
+                  </p>
+                  <hr />
+                </div>
+                <img src="images/method.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

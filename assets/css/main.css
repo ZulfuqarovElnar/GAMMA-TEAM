@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Cairo:wght@300;400;500;600;700;800;900&family=Foldit:wght@400;500;600;700;800;900&family=Livvic:wght@100;200;300;400;500;600;700;900&family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+a,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+header {
+  position: fixed;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin-bottom: 100px;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header .menu-icon-left {
+  display: none;
+  color: white;
+  font-size: 24px;
+}
+header .header .search {
+  display: none;
+}
+header .header .search .search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+header .header .search .search-box .input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(26, 26, 26, 0.3);
+  padding-right: 40px;
+  color: #fff;
+}
+header .header .search .search-box .input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+header .header .search .search-box .btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+header .header .search .search-box .btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+header .header .search .search-box .input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+header .header .logo h1 {
+  font-family: "Foldit", cursive;
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: 7px;
+}
+header .header nav ul {
+  gap: 35px;
+}
+header .header nav ul li:hover a {
+  color: rgb(189, 189, 189);
+}
+header .header nav ul li a {
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+header .header nav ul li .dropdown-item {
+  color: black;
+}
+header .header nav ul li .dropdown-item:hover {
+  color: black;
+}
+header .header .menu-icon i {
+  font-size: 24px;
+  color: white;
+}
+
+@media only screen and (max-width: 1269px) {
+  header .header nav {
+    display: none;
+  }
+  header .header .menu-icon-left {
+    display: block;
+  }
+  header .header .menu-icon {
+    display: none;
+  }
+  header .header .search {
+    display: block;
+  }
+}
+.hero-banner {
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+.hero-banner #hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+.hero-banner #hero-banner .texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+.hero-banner #hero-banner .texts h1 {
+  font-family: "Livvic", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero-banner #hero-banner .texts p {
+  line-height: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+.hero-banner #hero-banner .image {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-banner #hero-banner .image img {
+  max-width: 500px;
+  transform: scaleX(-1);
+}
+.hero-banner #hero-banner .contact-btn {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 20px 30px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(66, 66, 222) 90%, rgb(0, 212, 255) 100%);
+}
+
+@media only screen and (max-width: 778px) {
+  .hero-banner #hero-banner {
+    flex-direction: column;
+  }
+  .hero-banner #hero-banner .image {
+    max-width: 100%;
+    padding: 5%;
+  }
+  .hero-banner #hero-banner .image img {
+    max-width: 500px;
+  }
+  .hero-banner #hero-banner .texts {
+    text-align: center;
+  }
+}
+.partner-section {
+  background-color: #000000;
+  background-image: linear-gradient(to right, #000000, #130f40);
+}
+.partner-section .about-partner-and-image {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .partner-section .about-partner-and-image {
+    flex-direction: column;
+  }
+}
+.partner-section .about-partner-and-image .partner-image {
+  width: 50%;
+  float: left;
+}
+.partner-section .about-partner-and-image .partner-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+@media only screen and (max-width: 991px) {
+  .partner-section .about-partner-and-image .partner-image {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
+}
+.partner-section .about-partner-and-image .about-partnership {
+  width: 50%;
+}
+@media only screen and (max-width: 991px) {
+  .partner-section .about-partner-and-image .about-partnership {
+    width: 100%;
+  }
+}
+.partner-section .about-partner-and-image .about-partnership .about-partner-header {
+  padding-left: 30px;
+}
+.partner-section .about-partner-and-image .about-partnership .about-partner-header h3 {
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  color: #fe7068;
+}
+.partner-section .about-partner-and-image .about-partnership .about-partner-header h3::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: #fe7068;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.partner-section .about-partner-and-image .about-partnership .about-partner-header h1 {
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+  font-size: 40px;
+  color: #fff;
+}
+.partner-section .about-partner-and-image .about-partnership .about {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.partner-section .about-partner-and-image .about-partnership .about .text-div span {
+  padding: 0 20px;
+  color: rgba(144, 144, 144, 0.3);
+  font-family: "Cairo", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.partner-section .about-partner-and-image .about-partnership .about div h3 {
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+  color: #fe7068;
+  font-size: 24px;
+}
+.partner-section .about-partner-and-image .about-partnership .about div p {
+  font-weight: 400;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .partner-section .about-partner-and-image {
+    flex-direction: column;
+  }
+  .partner-section .about-partner-and-image .partner-image {
+    display: flex;
+    justify-content: center;
+  }
+  .partner-section .about-partner-and-image .partner-image img {
+    max-width: 700px;
+    padding: 70px;
+  }
+  .partner-section .about-partner-and-image .about-partnership,
+  .partner-section .about-partner-and-image .about .text-div {
+    width: 100%;
+  }
+}
+
+.sign-up-section .sign-up {
+  height: 90vh;
+  background-image: url("../../../assets/images/sign-up-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-section .sign-up form {
+  font-family: "Lato", sans-serif;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.sign-up-section .sign-up form h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.4);
+}
+.sign-up-section .sign-up form .form-item {
+  border-bottom: 1px solid black;
+}
+.sign-up-section .sign-up form .form-item input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+}
+.sign-up-section .sign-up form #agree-checkbox {
+  margin-top: 20px;
+}
+.sign-up-section .sign-up form .register-login-btn .register-btn {
+  padding: 15px 25px;
+  background-color: #92e3a9;
+  border: 2px solid #92e3a9;
+  border-radius: 15px;
+  transition: 0.6s;
+}
+.sign-up-section .sign-up form .register-login-btn .register-btn:hover {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=main.css.map */
