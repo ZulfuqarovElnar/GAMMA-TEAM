@@ -1,0 +1,47 @@
+.service-section {
+  background-color: #130f40;
+  font-family: "Livvic", sans-serif;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+  .service-header {
+    color: white;
+    position: sticky;
+    padding: 60px;
+    text-align: center;
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+    }
+  }
+}
+.service-about-section {
+  font-family: "Livvic", sans-serif;
+  .service-image-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .service-image {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .service-about {
+      width: 50%;
+      p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-about-section .service-image-about {
+    flex-direction: column;
+  }
+  .service-about-section .service-image-about .service-image,
+  .service-about-section .service-image-about {
+    width: 100%;
+  }
+}
