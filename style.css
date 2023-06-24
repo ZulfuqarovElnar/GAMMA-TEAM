@@ -23,16 +23,17 @@ a{
     width: 100%;
     max-width: 1190px;
     height: 230px;
-    background-color: rgb(205, 42, 246);
+    background-color: rgb(19, 15, 64);
     margin: 40px auto;
     border-radius: 15px;
-    box-shadow: 0 8px 10px rgba(205, 42, 246, 0.3);
+    box-shadow: 0 8px 10px rgba(19, 15, 64, 0.3);
 }
 .service-card{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 200px;
+    padding-top: 25px;
     text-align: center;
 }
 .service-card div {
@@ -45,29 +46,7 @@ a{
     font-weight: 600;
 }
 
-@media screen and (max-width:700px) {
-    .services{
-        height: 700px;
-        padding: 20px;
-    }
-    .service-container {
-        margin: 0 auto;
-        max-width: 400px;
-        height: 650px;
-        justify-content: center;
-        
-    }
-    .service-card{
-        padding-top: 300px;
-        flex-direction: column;
-    }
-    .service-card div p{
-        width: 300px;
-    }
-    .about-btn {
-        padding: 0 25px;
-    }
-}
+
 
             /* * About * */
 .about {
@@ -136,13 +115,13 @@ a{
     position: absolute;
     z-index: -1;
     left: 35%;
-    top: -1%;
+    top: -3%;
 }
 .about-vision span i{
     position: absolute;
-    top: 8.5%;
-    left: 43%;
-    font-size: 12px;
+    top: 7.5%;
+    left: 43.5%;
+    font-size: 10px;
 }
 .about-vision p{
     margin-top: 40px;
@@ -150,7 +129,7 @@ a{
 
 .about-card{
     width: 100%;
-    height: 650px;
+    height: 700px;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -185,15 +164,17 @@ a{
     color: #232323;
 }
 .vision-text p{
+    width: 80%;
     line-height: 35px;
     color: #696970;
 }
 .vision-text hr{
     width: 30px;
-    height: 2px;
+    height: 3px;
     background-color: rgb(205, 42, 246);
-    border: 1px solid rgb(205, 42, 246);
+    border: 2px solid rgb(205, 42, 246);
     margin: 40px 0;
+    opacity: 1;
 }
 .vision-card{
     display: none;
@@ -205,34 +186,35 @@ a{
     transition: all 0.5s;
 }
 
+        /* * Sponsorlar * */
 
-@media screen and (max-width: 1000px){
-    .about-card {
-        height: 1200px;
-        overflow: auto;
-    }
-    .vision-card .vision-body{
-        width: 80%;
-        margin: 0;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 20px;
-    }
-    .vision-text{
-        max-width: 800px;
-        width: 90%;
-        margin: 10px auto;
-    }
-    .vision-body img{
-        margin: 0 auto;
-    }
+.sponsor-section{
+    width: 100%;
+    height: 300px;
+}
+.sponsors{
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    margin: 10px auto;
+}
+.sponsors div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;
+    align-items: center;
+}
+.sponsors img{
+    width: 250px;
+    height: 200px;
 }
 
         /* * Footer Contact * */
 .footer{
     height: 400px;
     width: 100%;
-    background-color: rgb(205, 42, 246);
+    background-color: #130f40;
     color: #fff;
     overflow: auto;
 }
@@ -249,6 +231,7 @@ a{
     text-align: center;
 }
 .footer-card h1{
+    padding: 30px 0 20px;
     font-size: 35px;
 }
 .footer-card p{
@@ -282,6 +265,7 @@ a{
 
 .social-icon a div i{
     font-size: 20px;
+    color: #130f40;
 }
 .footer-contact {
     padding-top: 65px;
@@ -289,6 +273,7 @@ a{
 
 .footer-contact div i{
     font-size: 23px;
+    padding: 10px 0;
 }
 
 .footer-contract{
@@ -302,5 +287,59 @@ a{
     text-decoration: none;
 }
 .footer-contract a:hover{
-    color: #333;
+    color: #ff0000;
+}
+
+@media screen and (max-width: 1000px){
+    .about-card {
+        height: 1230px;
+        overflow: auto;
+    }
+    .vision-card .vision-body{
+        width: 80%;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .vision-text{
+        max-width: 800px;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .vision-body img{
+        margin: 0 auto;
+    }
+    .sponsor-section{
+        height: 400px;
+    }
+} 
+@media screen and (max-width:700px) {
+    .services{
+        height: 700px;
+        padding: 20px;
+    }
+    .service-container {
+        margin: 0 auto;
+        max-width: 400px;
+        height: 650px;
+        justify-content: center;
+    }
+    .service-card{
+        padding-top: 330px;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .service-card div p{
+        width: 300px;
+    }
+    .about-btn {
+        padding: 0 25px;
+    }
+}     
+
+@media screen and (max-width: 499px){
+    .sponsor-section{
+        height: 800px;
+    }
 }
