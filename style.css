@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     border: none;
+    outline: none;
 }
 html,body {
     margin: 0;
@@ -47,28 +48,29 @@ a{
 }
 /* litle meny */
 #sidenav {
-
-    width: 240px;
+    display: none;
+    width: 280px;
     height: 100vh;
     position: fixed;
     left: -10px;
     top: 0;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
     z-index: 99999;
     transition: 0.5s;
+    margin-top: 110.5px;
   }
   
   #sidenav nav ul {
-    padding-top: 40px;
+    padding-top: -10px;
   }
   
-  nav ul li {
+  #sidenav nav ul li {
     list-style: none;
-    margin: 50px 20px;
+    margin: 40px 20px;
     background: transparent;
   }
   
-  nav ul li a {
+  #sidenav nav ul li a {
     font-size: 20px;
     text-decoration: none;
     color: rgb(88, 47, 255);
@@ -93,8 +95,11 @@ a{
     width: 20px;
     margin-top: 15px;
   }
-
-
+  @media screen and (max-width:1268px){
+    #sidenav{
+        display: block;
+    }
+  }
 
             /* * About * */
 .about {
@@ -340,8 +345,7 @@ a{
 }
 @media screen and (max-width: 1268px){
     #manubtn {
-      display: block;
-      
+        display: block;
 }
 } 
 @media screen and (max-width: 1000px){

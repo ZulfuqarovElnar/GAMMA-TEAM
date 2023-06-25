@@ -37,23 +37,23 @@ incrementNumber(0, 0, 0, 0);
 
           // ABOUT Slider
 
-var slides = document.getElementsByClassName('vision-card');
+var slideEl = document.getElementsByClassName('vision-card');
 var buttons = document.getElementsByClassName('about-vision');
 var circle = document.getElementsByClassName('circle');
 
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
         var buttonIndex = Array.from(buttons).indexOf(this);
-        goToSlide(buttonIndex);
+        goToSlidef(buttonIndex);
         changeButtonColor(buttonIndex);
         circleButton(buttonIndex);
     });
 }
 
-function goToSlide(slideIndex) {
-    const currentSlide = document.querySelector('.active');
-    currentSlide.classList.remove('active');
-    slides[slideIndex].classList.add('active');
+function goToSlidef(slidefIndex) {
+    const currentSlidef = document.querySelector('.active');
+    currentSlidef.classList.remove('active');
+    slideEl[slidefIndex].classList.add('active');
 }
 
 function changeButtonColor(buttonIndex) {
@@ -84,7 +84,7 @@ manubtn.onclick = function () {
         menu.src = "./images/meny_icon.png";
     }
 }
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 100,
-    speedAsDuration: true
-});
+// var scroll = new SmoothScroll('a[href*="#"]', {
+//     speed: 100,
+//     speedAsDuration: true
+// });
