@@ -67,3 +67,24 @@ function circleButton(buttonIndex) {
     currentCircle.classList.remove('activ');
     circle[buttonIndex].classList.add('activ');
 }
+// // litle meny...............
+var manubtn = document.getElementById("manubtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+
+sidenav.style.left = "-290px"
+
+manubtn.onclick = function () {
+    if (sidenav.style.left == "-290px") {
+        sidenav.style.left = "0";
+        menu.src = "./images/menu_icon_close.png";
+    }
+    else {
+        sidenav.style.left = "-290px";
+        menu.src = "./images/meny_icon.png";
+    }
+}
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 100,
+    speedAsDuration: true
+});

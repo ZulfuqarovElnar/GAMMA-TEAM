@@ -122,11 +122,7 @@ header .header {
   align-items: center;
   justify-content: space-between;
 }
-header .header .menu-icon-left {
-  display: none;
-  color: white;
-  font-size: 24px;
-}
+
 header .header .search {
   display: none;
 }
@@ -447,3 +443,19 @@ header .header .menu-icon i {
 }
 
 /*# sourceMappingURL=main.css.map */
+/* Litle meny */
+.Sidenav_Option{
+  color: rgb(88, 47, 255);
+  background-color: transparent;
+  cursor: pointer;
+}
+.Sidenav_Option option{
+  background-color: black;
+  
+}
+.menu-icon-left{
+  display: none;
+}
+.carousel-wrapper{
+  z-index: 9999999;
+}
