@@ -95,7 +95,7 @@ a{
     width: 20px;
     margin-top: 15px;
   }
-  @media screen and (max-width:1268px){
+  @media screen and (max-width:1024px){
     #sidenav{
         display: block;
     }
@@ -343,7 +343,7 @@ a{
 .footer-contract a:hover{
     color: #ff0000;
 }
-@media screen and (max-width: 1268px){
+@media screen and (max-width: 1024px){
     #manubtn {
         display: block;
 }

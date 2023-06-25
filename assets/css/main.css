@@ -116,13 +116,18 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   margin-bottom: 100px;
+  z-index: 999;
 }
 header .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+header .header .menu-icon-left {
+  display: none;
+  color: white;
+  font-size: 24px;
+}
 header .header .search {
   display: none;
 }
@@ -209,7 +214,7 @@ header .header .menu-icon i {
   color: white;
 }
 
-@media only screen and (max-width: 1269px) {
+@media only screen and (max-width: 1024px) {
   header .header nav {
     display: none;
   }
@@ -293,7 +298,7 @@ header .header .menu-icon i {
   background-image: linear-gradient(to right, #000000, #130f40);
 }
 .partner-section .about-partner-and-image {
-  padding-top: 100px;
+  padding-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -356,6 +361,8 @@ header .header .menu-icon i {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  height: max-content;
+  padding: 60px 0;
 }
 .partner-section .about-partner-and-image .about-partnership .about .text-div span {
   padding: 0 20px;
@@ -395,67 +402,49 @@ header .header .menu-icon i {
   }
 }
 
-.sign-up-section .sign-up {
-  height: 90vh;
-  background-image: url("../../../assets/images/sign-up-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.service-section .service-header {
+  color: #130f40;
+  position: sticky;
+  padding-top: 160px;
+  text-align: center;
+}
+.service-section .service-header h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.service-about-section {
+  font-family: "Livvic", sans-serif;
+}
+.service-about-section .service-image-about {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
-.sign-up-section .sign-up form {
-  font-family: "Lato", sans-serif;
-  border: 1px solid black;
-  border-radius: 30px;
-  padding: 40px 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.service-about-section .service-image-about .service-image {
+  width: 50%;
 }
-.sign-up-section .sign-up form h1 {
-  font-size: 24px;
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.4);
+.service-about-section .service-image-about .service-image img {
+  width: 100%;
 }
-.sign-up-section .sign-up form .form-item {
-  border-bottom: 1px solid black;
+.service-about-section .service-image-about .service-about {
+  width: 50%;
 }
-.sign-up-section .sign-up form .form-item input {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  padding: 10px;
+.service-about-section .service-image-about .service-about p {
+  width: 100%;
+  font-size: 20px;
+  line-height: 25px;
 }
-.sign-up-section .sign-up form #agree-checkbox {
-  margin-top: 20px;
-}
-.sign-up-section .sign-up form .register-login-btn .register-btn {
-  padding: 15px 25px;
-  background-color: #92e3a9;
-  border: 2px solid #92e3a9;
-  border-radius: 15px;
-  transition: 0.6s;
-}
-.sign-up-section .sign-up form .register-login-btn .register-btn:hover {
-  background-color: transparent;
+
+@media only screen and (max-width: 991px) {
+  .service-about-section .service-image-about {
+    flex-direction: column;
+  }
+  .service-about-section .service-image-about .service-image,
+  .service-about-section .service-image-about {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
-/* Litle meny */
-.Sidenav_Option{
-  color: rgb(88, 47, 255);
-  background-color: transparent;
-  cursor: pointer;
-}
-.Sidenav_Option option{
-  background-color: black;
-  
-}
-.menu-icon-left{
-  display: none;
-}
-.carousel-wrapper{
-  z-index: 9999999;
-}
