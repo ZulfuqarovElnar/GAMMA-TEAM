@@ -22,9 +22,6 @@
     <header>
       <div class="container">
         <div class="header">
-          <div class="menu-icon-left">
-            <i class="fa-solid fa-bars"></i>
-          </div>
           <div class="logo">
             <h1>GAMMA</h1>
           </div>
@@ -43,36 +40,41 @@
                   >
                     Xidmətlərimiz
                   </a>
-
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Xidmətlərimiz</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Web dizayn</a>
+                      <a
+                        class="dropdown-item"
+                        id="web-design"
+                        href="web-design.html"
+                        >Web dizayn</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Digital Marketinq</a>
+                      <a class="dropdown-item" id="digital-marketing" href="#"
+                        >Digital Marketinq</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a class="dropdown-item" id="seo" href="#">
                         Search Engine Optimization
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Qrafik Dizayn</a>
+                      <a class="dropdown-item" id="graphic-design" href="#"
+                        >Qrafik Dizayn</a
+                      >
                     </li>
                   </ul>
                 </div>
               </li>
-              <li></li>
+
               <li><a href="">Galerimiz</a></li>
               <li><a href="">Müştərilərimiz</a></li>
               <li><a href="#footer">Bizə zəng et</a></li>
             </ul>
           </nav>
 
-          <div class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-          </div>
           <div class="search">
             <div class="search-box">
               <button class="btn-search"><i class="fas fa-search"></i></button>
@@ -88,38 +90,17 @@
     </header>
     <section class="service-section">
       <div class="container">
-        <div class="service-header">
-          <h1>Web Design</h1>
-        </div>
+        <div class="service-header"><h1>Web Design</h1></div>
       </div>
     </section>
     <section class="service-about-section">
       <div class="container">
         <div class="service-image-about">
           <div class="service-image">
-            <img
-              src="./assets/images/—Pngtree—start up your project concept_5335862.png"
-              alt=""
-            />
+            <img src="./assets/images/—Pngtree—start up your project concept_5335862.png" alt="" />
           </div>
           <div class="service-about">
-            <p>
-              "Web dizayn xidmətimizlə müştərilərinizin çevrimiçi varlığını
-              gücləndirməyə kömək edirik. Profesional dizaynerlərimiz,
-              istifadəçi təcrübəsini əsas tutaraq şəhərli və funksional veb
-              saytlar yaradır. Marka identitetinizi yansıtan fərdiləşdirilmiş
-              dizaynlərimizlə, saytınız ziyarətçilərin diqqətini cəlb edir və
-              onları maraqlı bir səyahətə dəvət edir. Sürətli yüklənmə vaxtları
-              və responsiv dizaynla, istifadəçilər fərqli cihazlarda problemsiz
-              bir təcrübə yaşaya bilir. SEO ən yaxşı praktikalarına riayət
-              edərək saytınızı axtarış motorları üçün optimallaşdırırıq və
-              orqanik trafik əldə etməyə kömək edirik. İrəli səviyyə
-              texnologiyalarından istifadə edərək təhlükəsizlik və performansı
-              təmin edirik. Qarışıqlıqdan uzaq qiymətləndirmə variantları ilə
-              hər ölçüdəki biznesə uyğun həllər təklif edirik. Web dizayn
-              xidmətimizlə rəqabət üstünlüyü qazanaraq dijital varlığınızı
-              gücləndirə bilərsiniz."
-            </p>
+            <p>Web dizayn xidmətimizlə müştərilərinizin çevrimiçi varlığını gücləndirməyə kömək edirik. Profesional dizaynerlərimiz, istifadəçi təcrübəsini əsas tutaraq şəhərli və funksional veb saytlar yaradır. Marka identitetinizi yansıtan fərdiləşdirilmiş dizaynlərimizlə, saytınız ziyarətçilərin diqqətini cəlb edir və onları maraqlı bir səyahətə dəvət edir. Sürətli yüklənmə vaxtları və responsiv dizaynla, istifadəçilər fərqli cihazlarda problemsiz bir təcrübə yaşaya bilir. SEO ən yaxşı praktikalarına riayət edərək saytınızı axtarış motorları üçün optimallaşdırırıq və orqanik trafik əldə etməyə kömək edirik. İrəli səviyyə texnologiyalarından istifadə edərək təhlükəsizlik və performansı təmin edirik. Qarışıqlıqdan uzaq qiymətləndirmə variantları ilə hər ölçüdəki biznesə uyğun həllər təklif edirik. Web dizayn xidmətimizlə rəqabət üstünlüyü qazanaraq dijital varlığınızı gücləndirə bilərsiniz.</p>
           </div>
         </div>
       </div>
@@ -178,7 +159,22 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</footer>
+
+  
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("services.html loaded");
+  });
+  </script>
+    <script src="./app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
 <!-- sass --watch ./assets/scss/main.scss ./assets/css/main.css -->
