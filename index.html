@@ -6,6 +6,7 @@
     <title>Gamma</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./galery.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -38,7 +39,7 @@
                   </select>
                 </a>
               </li>
-              <li class="navli"><a class="srif" href="#">Galerimiz</a></li>
+              <li class="navli"><a class="srif" href="#galery">Galerimiz</a></li>
               <li class="navli">
                 <a class="srif" href="#sponsor-section">Müştərilərimiz</a>
               </li>
@@ -50,7 +51,7 @@
         </div>
 
         <div id="manubtn">
-          <img class="aaa" src="./images/meny_icon.png" id="menu" />
+          <img  src="./images/meny_icon.png" id="menu" />
         </div>
         <div class="header">
           <div class="logo">
@@ -58,8 +59,8 @@
           </div>
           <nav>
             <ul class="d-flex align-items-center justify-content-between g-5">
-              <li><a href="">Ana səhifə</a></li>
-              <li><a href="">Şirkət haqqında</a></li>
+              <li><a href="#">Ana səhifə</a></li>
+              <li><a href="#about">Şirkət haqqında</a></li>
               <li>
                 <div class="dropdown">
                   <a
@@ -93,9 +94,9 @@
                 </div>
               </li>
               <li></li>
-              <li><a href="">Galerimiz</a></li>
-              <li><a href="">Müştərilərimiz</a></li>
-              <li><a href="">Bizə zəng et</a></li>
+              <li><a href="#galery">Galerimiz</a></li>
+              <li><a href="#sponsor-section">Müştərilərimiz</a></li>
+              <li><a href="#footer">Bizə zəng et</a></li>
             </ul>
           </nav>
 
@@ -320,7 +321,59 @@
         </div>
       </div>
     </section>
-
+<!-- galery -->
+<div class="about-head">
+  
+  <h1>GALERY</h1>
+  <br>
+</div>
+ <!-- carusel -->
+ <main>
+        
+  <div id="galery" class="carousel-wrapper" js-carousel-wrapper>
+    <!-- Counter -->
+    <div class="slide-number">
+      <span class="slide-number-text" js-slide-number-text> 1 / 6</span>
+    </div>
+    
+    <!-- Images -->
+    
+    <div class="carousel-item1" js-carousel-item data-active-slide>
+       <img src="./assets/images/4.jpg" alt="d">
+      
+    </div>
+    <div class="carousel-item1" js-carousel-item>
+      
+      <img src="./assets/images/1.png" alt="a">
+    </div>
+    <div class="carousel-item1" js-carousel-item>
+      <img src="./assets/images/3.jpg" alt="c">
+    </div>
+    <div class="carousel-item1" js-carousel-item>
+     <img src="./assets/images/2.jpg" alt="b">
+    </div>
+    <div class="carousel-item1" js-carousel-item>
+      <img src="./assets/images/5.jpg" alt="e">
+    </div>
+    <div class="carousel-item1" js-carousel-item>
+      <img src="./assets/images/6.jpg" alt="e">
+    </div>
+    <!-- Navigation Arrows -->
+    <button type="button" class="carousel-arrow prev" data-carousel-arrows data-dir="prev"> &#x2039; </button>
+    <button type="button" class="carousel-arrow next" data-carousel-arrows data-dir="next"> &#x203A; </button>
+    <!-- Pagination Dots -->
+    <div class="carousel-dots" data-carousel-dots>
+      <button type="button" class="dots" data-active-dot js-data-dots data-dots-index="1"> </button>
+      <button type="button" class="dots" js-data-dots data-dots-index="2"> </button>
+      <button type="button" class="dots" js-data-dots data-dots-index="3"> </button>
+      <button type="button" class="dots" js-data-dots data-dots-index="4"> </button>
+      <button type="button" class="dots" js-data-dots data-dots-index="5"> </button>
+      <button type="button" class="dots" js-data-dots data-dots-index="6"> </button>
+    </div>
+  </div>
+</main>
+  <!-- carusel end -->
+<!-- galery end-->
     <footer class="footer" id="footer">
       <div class="footer-gird">
         <div class="footer-card">
@@ -376,7 +429,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="galery.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

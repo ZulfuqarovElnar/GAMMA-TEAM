@@ -84,7 +84,4 @@ manubtn.onclick = function () {
         menu.src = "./images/meny_icon.png";
     }
 }
-// var scroll = new SmoothScroll('a[href*="#"]', {
-//     speed: 100,
-//     speedAsDuration: true
-// });
+
