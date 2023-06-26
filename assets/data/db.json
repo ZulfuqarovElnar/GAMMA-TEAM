@@ -1,0 +1,16 @@
+{
+    "services":[
+        {
+            "name":"Web Dizayn və Web Proqramlaşdırma",
+            "description":"Web dizayn xidmətimizlə müştərilərinizin çevrimiçi varlığını gücləndirməyə kömək edirik. Profesional dizaynerlərimiz, istifadəçi təcrübəsini əsas tutaraq şəhərli və funksional veb saytlar yaradır. Marka identitetinizi yansıtan fərdiləşdirilmiş dizaynlərimizlə, saytınız ziyarətçilərin diqqətini cəlb edir və onları maraqlı bir səyahətə dəvət edir. Sürətli yüklənmə vaxtları və responsiv dizaynla, istifadəçilər fərqli cihazlarda problemsiz bir təcrübə yaşaya bilir. SEO ən yaxşı praktikalarına riayət edərək saytınızı axtarış motorları üçün optimallaşdırırıq və orqanik trafik əldə etməyə kömək edirik. İrəli səviyyə texnologiyalarından istifadə edərək təhlükəsizlik və performansı təmin edirik. Qarışıqlıqdan uzaq qiymətləndirmə variantları ilə hər ölçüdəki biznesə uyğun həllər təklif edirik. Web dizayn xidmətimizlə rəqabət üstünlüyü qazanaraq dijital varlığınızı gücləndirə bilərsiniz.",
+            "photo1":"../images/—Pngtree—business partnership concept with two_7516360.png"
+           
+        },
+        {
+            "name":"SEO",
+            "description":"Agentliyimiz müxtəlif rəqəmsal marketinq xidmətləri təklif edən bir agentlikdir. Biz sizə biznesinizin rəqəmsal marketinq strategiyasını inkişaf etdirməyə və onlayn mövcudluğunuzu gücləndirməyə kömək etmək üçün buradayıq.Rəqəmsal marketinq dünyasında fərq yaratmaq üçün sizə lazım olan təcrübə və təcrübəmiz var. Sizin üçün fərdiləşdirilmiş rəqəmsal marketinq strategiyasını yarada bilərik. Hədəf auditoriyanızı düzgün kanallarda hədəfləməklə, biz sizin brend məlumatlılığınızı artıra, potensial müştərilərə çata və biznesinizi inkişaf etdirə bilərik.Veb saytınızda SEO (Axtarış Mühərrikinin Optimizasiyası) araşdırmalarını apararaq, üzvi axtarış nəticələrində daha yüksək yer tutmağınıza əmin ola bilərik. Biz həmçinin məzmun marketinq strategiyaları ilə cəlbedici və dəyərli məzmun yarada, bloqlar, məqalələr və sosial media yazıları ilə brend nüfuzunuzu gücləndirə bilərik.Rəqəmsal reklamda da sizə kömək edə bilərik. Google Reklamları və sosial media reklamları kimi kanallardan istifadə etməklə, hədəf auditoriyanıza çata və reklam büdcənizdən maksimum yararlana bilərik. Rəqəmsal reklamların effektivliyini təhlil edərək, biz davamlı təkmilləşdirmələr edə və maksimum dönüşüm əldə etməyinizi təmin edə bilərik.",
+            "photo1":"../images/—Pngtree—business partnership concept with two_7516360.png"
+           
+        }
+    ]
+}
