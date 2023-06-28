@@ -88,3 +88,9 @@ manubtn.onclick = function () {
 //     speed: 100,
 //     speedAsDuration: true
 // });
+
+
+
+
+  
+  

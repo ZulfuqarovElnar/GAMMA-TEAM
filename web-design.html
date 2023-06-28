@@ -105,6 +105,49 @@
         </div>
       </div>
     </section>
+
+    <section class="design-section">
+      <div class="design-grid">
+        <div class="design-card">
+          <div class="design-body">
+            <h1>Vebsaytın hazırlanması və dizaynı</h1>
+            <p>Biz sizə vebsaytınız və ya onlayn mağazanız üçün dizayn və proqramlaşdırma xidmətləri təklif edirik, onu inkişaf etdirək və axtarış sistemlərinə uyğun olaraq onun işini təkmilləşdirək və bu xidmətlər şirkətinizə:</p>
+          </div>
+            <div class="design-text">
+              <div class="design-text-head">
+                <h3>MƏHSULLAR VƏ XİDMƏTLƏR</h3>
+                <p id="text">0%</p>
+              </div>
+              <div class="design-bar" data-width="80"></div>
+              <hr>
+            </div>
+            
+            <div class="design-text">
+              <div class="design-text-head">
+                <h3>SATIŞ NAİLİYYƏTİ</h3>
+                <p id="text">0%</p>
+              </div>
+              <div class="design-bar" data-width="86"></div>
+              <hr>
+            </div>
+              <div class="design-text">
+                <div class="design-text-head">
+                  <h3>BREND MƏLUMATLILIĞI</h3>
+                  <p id="text">0%</p>
+                </div>
+                <div class="design-bar" data-width="93"></div>
+                <hr>
+              </div>
+            </div>
+              <div class="design-img">
+                <img src="images/website-design-development-services.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer" id="footer">
       <div class="footer-gird">
         <div class="footer-card">
@@ -151,7 +194,7 @@
         </div>
         <div class="footer-card">
           <div class="footer-contract">
-            <h2>Gamma Müqaviləsi</h2>
+            <h2>Gamma Müqavilələri</h2>
             <a href="">Xidmət Müqavilə</a>
             <a href="">İşbirliyi Partnyorluğu Müqaviləsi</a>
             <a href="">İşgüzarlıq Müqaviləsi</a>
@@ -159,17 +202,53 @@
           </div>
         </div>
       </div>
-    </footer><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</footer>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const designBars = document.querySelectorAll(".design-bar");
+  const texts = document.querySelectorAll("#text");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    console.log("services.html loaded");
+  const widthValues = [80, 85, 90]; // Her bir .design-bar için özelleştirilmiş genişlik değerleri
+  const leftValues = ["325px", "345px", "370px"]; // Her bir .design-bar için özelleştirilmiş left değerleri
+
+  designBars.forEach(function (designBar, index) {
+    const text = texts[index];
+    const targetWidth = widthValues[index];
+    const leftValue = leftValues[index];
+
+    const increment = ((targetWidth - 0) / 200) * 10;
+    let width = 0;
+    let value = 0;
+
+    const intervalId = setInterval(function () {
+      width += increment;
+      value += increment;
+      designBar.style.width = width + "%";
+      text.innerText = Math.round(value) + "%";
+
+      if (width >= targetWidth) {
+        width = targetWidth;
+        designBar.style.width = width + "%";
+        clearInterval(intervalId);
+        setTimeout(function () {
+          text.innerText = targetWidth + "%";
+        }, 4000); // 4 saniye gecikmeyle değeri targetWidth olarak güncelle
+      }
+    }, 100);
+
+    // Move the text to left position after a delay
+    setTimeout(function () {
+      text.style.left = leftValue;
+    }, 900);
   });
+});
   </script>
-    <script src="./app.js"></script>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

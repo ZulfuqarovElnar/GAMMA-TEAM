@@ -295,7 +295,7 @@ a{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .social-icon a{
     background-color: #fff;
@@ -325,28 +325,124 @@ a{
     padding-top: 65px;
 }
 
+
 .footer-contact div i{
     font-size: 23px;
     padding: 10px 0;
 }
 
 .footer-contract{
-    padding: 30px 0 10px;
+    padding: 10px 0 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+.footer-contract h2{
+    font-size: 33px;
+    padding: 37px 0 0 0;
+}
 .footer-contract a{
+    padding: 10px 0;
     color: #fff;
     text-decoration: none;
 }
 .footer-contract a:hover{
     color: #ff0000;
 }
+
+            /* * Web Design * */
+.design-section{
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+}
+.design-grid{
+    max-width: 1400px;
+    width: 100%;
+    height: 560px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px,1fr));
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.design-card{
+    max-width: 450px;
+    width: 100%;
+    height: 560px;
+    padding: 20px 0;
+}
+.design-body{
+    padding-bottom: 40px;
+}
+.design-body h1{
+    font-size: 40px;
+    color: #130f40;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.design-body p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+.design-text-head {
+    position: relative;
+    display: flex;
+    padding: 10px 0;
+}
+.design-text-head h3{
+    font-size: 12px;
+}
+.design-text-head #text {
+    position: absolute;
+    top: 8px;
+    left: 200px;
+    text-align: center;
+    transition: left 3.4s ease;
+    color: #333;
+}
+.design-bar{
+    height: 5px;
+    width: 0%;
+    color: rgb(205, 42, 246);
+    background-color: rgb(205, 42, 246);
+    border: 2px solid rgb(205, 42, 246);
+    border-radius: 7px;
+    opacity: 1;
+    transition: width 1s ease;
+}
+
+.design-img img{
+    max-width: 550px;
+    width: 100%;
+    height: 550px;
+}
+@media screen and (max-width: 1080px){
+    .design-section{
+        height: 1300px;
+    }
+    .design-grid{
+        grid-template-columns: repeat(auto-fit, minmax(4    20px,1fr));
+    }
+    .design-card{
+        max-width: 600px;
+        width:100%;
+        padding:0 20px
+    }
+
+    .design-img img {
+        max-width: 800px;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1024px){
     #manubtn {
         display: block;
 }
+    
 } 
 @media screen and (max-width: 1000px){
     .about-card {
@@ -377,7 +473,7 @@ a{
         position: fixed;
         left: 30px;
         top: 60px;
-      }
+    }
 
     .services{
         height: 700px;
