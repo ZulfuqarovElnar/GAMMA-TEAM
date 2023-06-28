@@ -27,8 +27,8 @@
           </div>
           <nav>
             <ul class="d-flex align-items-center justify-content-between g-5">
-              <li><a href="">Ana səhifə</a></li>
-              <li><a href="">Şirkət haqqında</a></li>
+              <li><a href="index.html">Ana səhifə</a></li>
+              <li><a href="index.html#about">Şirkət haqqında</a></li>
               <li>
                 <div class="dropdown">
                   <a
@@ -41,7 +41,7 @@
                     Xidmətlərimiz
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Xidmətlərimiz</a></li>
+                    <li><a class="dropdown-item" href="index.html">Xidmətlərimiz</a></li>
                     <li>
                       <a
                         class="dropdown-item"
@@ -56,22 +56,22 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" id="seo" href="#">
+                      <a class="dropdown-item" id="seo" href="seo.html">
                         Search Engine Optimization
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" id="graphic-design" href="#"
-                        >Qrafik Dizayn</a
+                      <a class="dropdown-item" id="graphic-design" href="#qrafic">
+                        Qrafik Dizayn</a
                       >
                     </li>
                   </ul>
                 </div>
               </li>
 
-              <li><a href="">Galerimiz</a></li>
-              <li><a href="">Müştərilərimiz</a></li>
-              <li><a href="">Bizə zəng et</a></li>
+              <li><a href="index.html#galery">Galerimiz</a></li>
+              <li><a href="index.html#sponsor-section">Müştərilərimiz</a></li>
+              <li><a href="#footer">Bizə zəng et</a></li>
             </ul>
           </nav>
 
@@ -93,18 +93,60 @@
         <div class="service-header"><h1>Search Engine Optimization</h1></div>
       </div>
     </section>
-    <section class="service-about-section">
-      <div class="container">
-        <div class="service-image-about flex-row-reverse">
-          <div class="service-image">
+    <section class="seo-about-section">
+        <div class="seo-image-about">
+          <div class="seo-image">
             <img src="./assets/images/—Pngtree—student online learning for search_7259419.png" alt=""  />
           </div>
-          <div class="service-about">
+          <div class="seo-about">
             <p>Agentliyimiz müxtəlif rəqəmsal marketinq xidmətləri təklif edən bir agentlikdir. Biz sizə biznesinizin rəqəmsal marketinq strategiyasını inkişaf etdirməyə və onlayn mövcudluğunuzu gücləndirməyə kömək etmək üçün buradayıq.Rəqəmsal marketinq dünyasında fərq yaratmaq üçün sizə lazım olan təcrübə və təcrübəmiz var. Sizin üçün fərdiləşdirilmiş rəqəmsal marketinq strategiyasını yarada bilərik. Hədəf auditoriyanızı düzgün kanallarda hədəfləməklə, biz sizin brend məlumatlılığınızı artıra, potensial müştərilərə çata və biznesinizi inkişaf etdirə bilərik.Veb saytınızda SEO (Axtarış Mühərrikinin Optimizasiyası) araşdırmalarını apararaq, üzvi axtarış nəticələrində daha yüksək yer tutmağınıza əmin ola bilərik. Biz həmçinin məzmun marketinq strategiyaları ilə cəlbedici və dəyərli məzmun yarada, bloqlar, məqalələr və sosial media yazıları ilə brend nüfuzunuzu gücləndirə bilərik.Rəqəmsal reklamda da sizə kömək edə bilərik. Google Reklamları və sosial media reklamları kimi kanallardan istifadə etməklə, hədəf auditoriyanıza çata və reklam büdcənizdən maksimum yararlana bilərik. Rəqəmsal reklamların effektivliyini təhlil edərək, biz davamlı təkmilləşdirmələr edə və maksimum dönüşüm əldə etməyinizi təmin edə bilərik.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="design-section" id="qrafic">
+      <div class="design-grid">
+        <div class="design-card">
+          <div class="design-body">
+            <h1>Qrafik dizayn</h1>
+            <p>
+              Biz sizə vizual şəxsiyyət, sosial media yazıları və şirkətinizə kömək edəcək nəşrlərdən ibarət qrafik dizayn xidmətini təklif edirik:</p>
+          </div>
+            <div class="design-text">
+              <div class="design-text-head">
+                <h3>ŞİRKƏTİN İDEYALARI</h3>
+                <p id="text">0%</p>
+              </div>
+              <div class="design-bar" data-width="75"></div>
+              <hr>
+            </div>
+          
+            <div class="design-text">
+              <div class="design-text-head">
+                <h3>MƏHSULLARIN NÜMAYİŞİ</h3>
+                <p id="text">0%</p>
+              </div>
+              <div class="design-bar" data-width="86"></div>
+              <hr>
+            </div>
+              <div class="design-text">
+                <div class="design-text-head">
+                  <h3>BREND MƏLUMATLILIĞI</h3>
+                  <p id="text">0%</p>
+                </div>
+                <div class="design-bar" data-width="80"></div>
+                <hr>
+              </div>
+            </div>
+              <div class="design-img">
+                <img src="images/website-design-development-services.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <footer class="footer" id="footer">
       <div class="footer-gird">
         <div class="footer-card">
@@ -162,14 +204,46 @@
     </footer><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </footer>
 
-  
 <script>
-
   document.addEventListener("DOMContentLoaded", function () {
-    console.log("services.html loaded");
+    const designBars = document.querySelectorAll(".design-bar");
+    const texts = document.querySelectorAll("#text");
+  
+    const widthValues = [70, 90, 80]; // Her bir .design-bar için özelleştirilmiş genişlik değerleri
+    const leftValues = ["290px", "370px", "335px"]; // Her bir .design-bar için özelleştirilmiş left değerleri
+  
+    designBars.forEach(function (designBar, index) {
+      const text = texts[index];
+      const targetWidth = widthValues[index];
+      const leftValue = leftValues[index];
+  
+      const increment = ((targetWidth - 0) / 200) * 10;
+      let width = 0;
+      let value = 0;
+  
+      const intervalId = setInterval(function () {
+        width += increment;
+        value += increment;
+        designBar.style.width = width + "%";
+        text.innerText = Math.round(value) + "%";
+  
+        if (width >= targetWidth) {
+          width = targetWidth;
+          designBar.style.width = width + "%";
+          clearInterval(intervalId);
+          setTimeout(function () {
+            text.innerText = targetWidth + "%";
+          }, 4000); // 4 saniye gecikmeyle değeri targetWidth olarak güncelle
+        }
+      }, 100);
+  
+      // Move the text to left position after a delay
+      setTimeout(function () {
+        text.style.left = leftValue;
+      }, 900);
+    });
   });
-  </script>
-    <script src="./app.js"></script>
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
