@@ -95,6 +95,15 @@ a{
     width: 20px;
     margin-top: 15px;
   }
+  .Sidenav_Option{
+    background: transparent;
+    color: rgb(88, 47, 255);
+  }
+  .Sidenav_Option option{
+    background: rgb(19, 19, 19);
+  }
+ 
+ 
   @media screen and (max-width:1024px){
     #sidenav{
         display: block;
